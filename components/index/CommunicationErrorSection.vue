@@ -55,7 +55,7 @@ const titleColor = computed(() => {
 </script>
 
 <template>
-  <div class="py-24 bg-black min-h-screen flex justify-center items-center overflow-x-hidden"
+  <div class="py-24 bg-black min-h-screen flex justify-center items-center overflow-x-hidden overflow-y-hidden"
     id="communicationErrorSection">
     <div id="communicationErrorSectionScrollContainer">
       <dl class=" gap-x-8 gap-y-16  text-center">

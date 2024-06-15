@@ -86,7 +86,7 @@ function lockPatternColor(i: number, j: number) {
     </div> -->
     <div class="h-screen flex-col justify-center flex px-8">
       <h1 class="hidden-text text-white lg:text-9xl text-4xl tracking-tight font-bold">
-        Security First
+        <span class="text-green-400">Security</span> First
       </h1>
       <h1 class="hidden-text text-white lg:text-9xl text-4xl tracking-tight font-bold lg:mt-4 mt-2">
         Worry-Free Use
