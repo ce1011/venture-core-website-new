@@ -97,7 +97,6 @@ const div7Ref = ref(null);
               :to-ref="div4Ref"
               :curvature="-75"
               :end-y-offset="-10"
-              :duration="2"
               :path-width="6"
               :reverse="true"
           />
@@ -105,7 +104,6 @@ const div7Ref = ref(null);
               :container-ref="containerRef"
               :from-ref="div2Ref"
               :to-ref="div4Ref"
-              :duration="2"
               :path-width="6"
               :reverse="true"
           />
@@ -115,7 +113,6 @@ const div7Ref = ref(null);
               :to-ref="div4Ref"
               :curvature="75"
               :end-y-offset="10"
-              :duration="2"
               :path-width="6"
               :reverse="true"
           />
@@ -125,7 +122,6 @@ const div7Ref = ref(null);
               :to-ref="div4Ref"
               :curvature="-75"
               :end-y-offset="-10"
-              :duration="2"
               :path-width="6"
               :reverse="true"
           />
@@ -133,7 +129,6 @@ const div7Ref = ref(null);
               :container-ref="containerRef"
               :from-ref="div6Ref"
               :to-ref="div4Ref"
-              :duration="2"
               :path-width="6"
               :reverse="true"
           />
@@ -143,7 +138,6 @@ const div7Ref = ref(null);
               :to-ref="div4Ref"
               :curvature="75"
               :end-y-offset="10"
-              :duration="2"
               :path-width="6"
               :reverse="true"
           />
