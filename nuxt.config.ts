@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2023-10-01',
-  modules: [],
+  modules: ['motion-v/nuxt',],
   postcss: {
     plugins: {
       tailwindcss: {},

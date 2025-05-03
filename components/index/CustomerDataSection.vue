@@ -1,42 +1,154 @@
 <script lang="ts" setup>
-import anime from 'animejs/lib/anime.es.js';
+import { Icon } from "@iconify/vue";
 
-onMounted(() => {
-  anime({targets: '.data-square-up-to-down', translateY: anime.random(0,200), duration: 1500,delay: anime.stagger(10), loop: true, easing: 'cubicBezier(.5, .05, .1, .3)' })
-
-  anime({targets: '.data-square-down-to-up', translateY: anime.random(0,-200), duration: 1500,delay: anime.stagger(10), loop: true, easing: 'cubicBezier(.5, .05, .1, .3)' })
-
-
-});
+const containerRef = ref(null);
+const div1Ref = ref(null);
+const div2Ref = ref(null);
+const div3Ref = ref(null);
+const div4Ref = ref(null);
+const div5Ref = ref(null);
+const div6Ref = ref(null);
+const div7Ref = ref(null);
 
 </script>
 
 <template>
   <div class="h-screen bg-black">
     <div class="grid grid-cols-1 lg:grid-cols-2 justify-center w-full h-screen px-4 py-3 lg:p-0">
-      <div class="px-2 py-3 m-auto">
-        <IndexCustomerDataSectionMacCard :defaultPadding="true">
-          <!-- <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Your application
-          </h5> -->
-          <div class="flex w-36 items-center">
-            <VentureLogo />
-            <VentureCoreTypeface />
+      <ClientOnly>
+        <div
+            ref="containerRef"
+            class="relative flex h-[900px] w-full items-center justify-center overflow-hidden rounded-lg p-10 md:shadow-xl m-auto"
+        >
+          <div
+              class="flex size-full max-h-[200px] max-w-lg flex-col items-stretch justify-between gap-10"
+          >
+            <div class="flex flex-row items-center justify-between">
+              <div
+                  ref="div1Ref"
+                  class="z-10 flex size-16 items-center justify-center rounded-full border-2 bg-white p-2 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] dark:text-black"
+              >
+                <Icon
+                    icon="logos:google-analytics"
+                    height="24"
+                />
+              </div>
+              <div
+                  ref="div5Ref"
+                  class="z-10 flex size-16 items-center justify-center rounded-full border-2 bg-white p-2 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]"
+              >
+                <Icon
+                    icon="logos:segment-icon"
+                    height="24"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div
+                  ref="div2Ref"
+                  class="z-10 flex size-16 items-center justify-center rounded-full border-2 bg-white p-2 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] dark:text-black"
+              >
+                <Icon
+                    icon="logos:meta-icon"
+                    height="24"
+                />
+              </div>
+              <div
+                  ref="div4Ref"
+                  class="z-10 flex size-20 items-center justify-center rounded-full border-2 bg-white p-2 text-black shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]"
+              >
+                <VentureLogo/>
+              </div>
+              <div
+                  ref="div6Ref"
+                  class="z-10 flex size-16 items-center justify-center rounded-full border-2 bg-white p-2 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]"
+              >
+                <Icon
+                    icon="logos:mongodb-icon"
+                    height="24"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div
+                  ref="div3Ref"
+                  class="z-10 flex size-16 items-center justify-center rounded-full border-2 bg-white p-2 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] dark:text-black"
+              >
+                <Icon
+                    icon="logos:whatsapp-icon"
+                    height="24"
+                />
+              </div>
+              <div
+                  ref="div7Ref"
+                  class="z-10 flex size-16 items-center justify-center rounded-full border-2 bg-white p-2 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]"
+              >
+                <Icon
+                    icon="logos:messenger"
+                    height="24"
+                />
+              </div>
+            </div>
           </div>
-        </IndexCustomerDataSectionMacCard>
 
-        <div class="flex">
-          <div class="data-square-up-to-down w-[10px] h-[10px] bg-blue-50 mt-4 mx-2" v-for="i in 15"></div>
+          <UtilityAnimateBeam
+              :container-ref="containerRef"
+              :from-ref="div1Ref"
+              :to-ref="div4Ref"
+              :curvature="-75"
+              :end-y-offset="-10"
+              :duration="2"
+              :path-width="6"
+              :reverse="true"
+          />
+          <UtilityAnimateBeam
+              :container-ref="containerRef"
+              :from-ref="div2Ref"
+              :to-ref="div4Ref"
+              :duration="2"
+              :path-width="6"
+              :reverse="true"
+          />
+          <UtilityAnimateBeam
+              :container-ref="containerRef"
+              :from-ref="div3Ref"
+              :to-ref="div4Ref"
+              :curvature="75"
+              :end-y-offset="10"
+              :duration="2"
+              :path-width="6"
+              :reverse="true"
+          />
+          <UtilityAnimateBeam
+              :container-ref="containerRef"
+              :from-ref="div5Ref"
+              :to-ref="div4Ref"
+              :curvature="-75"
+              :end-y-offset="-10"
+              :duration="2"
+              :path-width="6"
+              :reverse="true"
+          />
+          <UtilityAnimateBeam
+              :container-ref="containerRef"
+              :from-ref="div6Ref"
+              :to-ref="div4Ref"
+              :duration="2"
+              :path-width="6"
+              :reverse="true"
+          />
+          <UtilityAnimateBeam
+              :container-ref="containerRef"
+              :from-ref="div7Ref"
+              :to-ref="div4Ref"
+              :curvature="75"
+              :end-y-offset="10"
+              :duration="2"
+              :path-width="6"
+              :reverse="true"
+          />
         </div>
-
-        <div class="flex h-[240px] items-end">
-          <div class="data-square-down-to-up w-[10px] h-[10px] bg-blue-50 mt-4 mx-2" v-for="i in 15"></div>
-        </div>
-
-        <IndexCustomerDataSectionMacCard :defaultPadding="false">
-          <img src="/img/ga4logo.webp" class="w-48" />
-          <img src="/img/graph.svg" class="w-4" />
-        </IndexCustomerDataSectionMacCard>
-      </div>
+      </ClientOnly>
       <div class="text-center px-6 mt-4 lg:m-auto">
         <h1 class="text-4xl font-bold text-white tracking-tight">Maximize Your Data from Day One</h1>
         <div class="text-gray-400 mt-4">
