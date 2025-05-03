@@ -1,14 +1,4 @@
 <script setup lang="ts">
-import Typewriter from 'typewriter-effect/dist/core';
-
-if(process.client){
-  new Typewriter('#heroSectionDevelopTypeText', {
-    strings: ['WEB', 'SOFTWARE', 'APP'],
-    autoStart: true,
-    loop: true,
-  });
-}
-
 </script>
 
 <template>
@@ -20,9 +10,13 @@ if(process.client){
             class="text-3xl lg:text-6xl bg-gradient-to-r from-[#6625ff] to-[#06b6ff] to-danger bg-clip-text text-transparent ">VISIONARIES</span>
           OF
         </h1>
-        <h1 id="heroSectionDevelopTypeText" class="lg:text-6xl font-bold tracking-tight text-white ">
-          WEB / SOFTWARE
-        </h1>
+        <UtilityFlipword
+            :words="['WEB', 'SOFTWARE', 'APP']"
+            :duration="1500"
+            class="lg:text-6xl font-bold tracking-tight text-white"
+        />
+      </div>
+      <div class="text-left">
         <h1 class="text-3xl  lg:text-6xl font-bold tracking-tight text-white ">
           CREATION
         </h1>

@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import anime from 'animejs';
 import gsap from 'gsap';
+import FlickeringGrid from "~/components/utility/FlickeringGrid.vue";
+import InteractiveGridPattern from "~/components/utility/InteractiveGridPattern.vue";
 
 let lockPattern = 
 [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -78,12 +80,6 @@ function lockPatternColor(i: number, j: number) {
 
 <template>
   <div class="bg-black" id="security-data-section">
-    <!-- <div class=" absolute inset-1/4 lock-pattern">
-      <div class="flex" v-for="(i,index) in lockPattern">
-        <div class="w-[10px] h-[10px] mx-1 my-1 rounded-xl" v-for="j in 30" :class="lockPatternColor(index,j)">
-        </div>
-      </div>
-    </div> -->
     <div class="h-screen flex-col justify-center flex px-8">
       <h1 class="hidden-text text-white lg:text-9xl text-4xl tracking-tight font-bold">
         <span class="text-green-400">Security</span> First
