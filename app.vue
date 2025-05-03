@@ -36,7 +36,7 @@ const isOpeningEnded = ref<boolean>(true);
   --gradient-color-2: #5e32ff;
   --gradient-color-3: #405fff;
   --gradient-color-4: #00bfff;
-  mask-image: url(/img/Venture%20Core_Transparent.svg);
+  mask-image: url(/img/Venture_Core_Transparent.svg);
   mask-repeat: no-repeat;
 }
 </style>

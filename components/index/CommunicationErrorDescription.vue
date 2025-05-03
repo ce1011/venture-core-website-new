@@ -67,7 +67,7 @@ onMounted(() => {
     <div class="flex-1 overflow-auto p-6 space-y-6">
       <div class="flex items-start space-x-3" :id="`message${index}`" v-for="(message, index) in messageFromVenture">
         <span class="relative flex overflow-hidden rounded-full shrink-0 w-8 h-8 bg-gray-900">
-          <img src="/img/Venture%20Core_Transparent.svg" alt="Avatar" />
+          <img src="/img/Venture_Core_Transparent.svg" alt="Avatar" />
           <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
         </span>
         <div class="bg-gray-900 text-white rounded-md px-3 py-2 max-w-[75%] text-sm">

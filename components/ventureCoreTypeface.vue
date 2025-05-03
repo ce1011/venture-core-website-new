@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <img src="/img/Venture%20Core_Typeface.svg"/>
+  <img src="/img/Venture_Core_Typeface.svg"/>
 </template>
 
 <style scoped>
