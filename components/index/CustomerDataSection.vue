@@ -13,8 +13,8 @@ const div7Ref = ref(null);
 </script>
 
 <template>
-  <div class="h-screen bg-black">
-    <div class="grid grid-cols-1 lg:grid-cols-2 justify-center w-full h-screen px-4 py-3 lg:p-0">
+  <div class="h-fit min:h-screen bg-black">
+    <div class="grid grid-cols-1 lg:grid-cols-2 justify-center w-full h-fit px-4 py-3 lg:p-0">
       <ClientOnly>
         <div
             ref="containerRef"
@@ -150,7 +150,7 @@ const div7Ref = ref(null);
         </div>
       </ClientOnly>
       <div class="text-center px-6 mt-4 lg:m-auto">
-        <h1 class="text-4xl font-bold text-white tracking-tight">Maximize Your Data from Day One</h1>
+        <h1 class="text-4xl font-bold text-white tracking-tight"><UtilityTextHighlight class="bg-gradient-to-r from-[#6625ff] to-[#06b6ff]" :duration="2">Maximize</UtilityTextHighlight> Your Data from Day One</h1>
         <div class="text-gray-400 mt-4">
           We go the extra mile to effortlessly ensure your website or app is fully integrated with your existing
           analytics and advertising platforms. While other vendors overlook these critical connections, our team
