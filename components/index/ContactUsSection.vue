@@ -4,7 +4,7 @@
 
 <template>
   <div class="bg-black text-center" id="contactus-section">
-    <div class="h-screen flex-col justify-center flex px-8">
+    <div class="min-h-screen flex-col justify-center flex px-8">
       <div class="flex items-center justify-center full-venture-core-logo">
         <VentureLogo class="h-8 lg:h-12" />
         <div class="w-4">
