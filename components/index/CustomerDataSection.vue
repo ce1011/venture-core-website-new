@@ -18,7 +18,7 @@ const div7Ref = ref(null);
       <ClientOnly>
         <div
             ref="containerRef"
-            class="relative flex h-[900px] w-full items-center justify-center overflow-hidden rounded-lg p-10 md:shadow-xl m-auto"
+            class="relative flex h-[650px] lg:h-[900px] w-full items-center justify-center overflow-hidden rounded-lg p-10 md:shadow-xl m-auto"
         >
           <div
               class="flex size-full max-h-[200px] max-w-lg flex-col items-stretch justify-between gap-10"
