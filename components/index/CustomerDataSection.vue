@@ -13,7 +13,7 @@ const div7Ref = ref(null);
 </script>
 
 <template>
-  <div class="h-fit min:h-screen bg-black">
+  <div class="h-screen bg-black">
     <div class="grid grid-cols-1 lg:grid-cols-2 justify-center w-full h-fit px-4 py-3 lg:p-0">
       <ClientOnly>
         <div

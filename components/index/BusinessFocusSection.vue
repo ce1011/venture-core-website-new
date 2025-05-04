@@ -4,7 +4,7 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="relative grid h-fit min:h-screen place-content-center overflow-hidden bg-black">
+  <div class="relative grid h-screen place-content-center overflow-hidden bg-black">
     <div class="container mx-auto px-4 mt-[10%]">
       <div class="text-5xl text-white">We make <UtilityContainerTextFlip :words="['Innovative', 'Creative', 'Cutting-Edge']"/> Digital Solutions</div>
       <div class="h-[100px]"/>

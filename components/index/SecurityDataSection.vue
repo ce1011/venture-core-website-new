@@ -8,7 +8,7 @@ import InteractiveGridPattern from "~/components/utility/InteractiveGridPattern.
 
 <template>
   <div class="bg-black" id="security-data-section">
-    <div class="h-fit min:h-screen flex-col justify-center flex px-8">
+    <div class="h-screen flex-col justify-center flex px-8">
       <h1 class="hidden-text text-white lg:text-9xl text-4xl tracking-tight font-bold">
         <span class="text-green-400">Security</span> First
       </h1>

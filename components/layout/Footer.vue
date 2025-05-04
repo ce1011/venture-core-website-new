@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-black w-full">
+  <div class="bg-black w-full ">
     <div class="w-full mx-auto py-4 px-8 md:flex md:items-center md:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/"
           class="hover:underline">Venture Core</a>. All Rights Reserved.
